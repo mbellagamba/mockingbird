@@ -1,0 +1,10 @@
+{
+  "port": 1337,
+  "format": "single",
+  "dir": "mocks/",
+  "api": {
+    "protocol": "https",
+    "hostname": "example.com",
+    "base": "/api/v1"
+  }
+}

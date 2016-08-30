@@ -1,0 +1,31 @@
+{
+  "name": "mockingbird",
+  "version": "1.0.0",
+  "description": "Mocks an API server. It stores real API responses and serves them later to a test environment.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js -u",
+    "update": "node src/index.js -u",
+    "serve": "node src/index.js -s",
+    "reset": "node src/index.js -r",
+    "help": "node src/index.js -h",
+    "lint": "node_modules/jshint/bin/jshint --reporter=node_modules/jshint-stylish/index.js src/*.js test/*.js",
+    "version": "node src/index.js -v",
+    "test": "JASMINE_CONFIG_PATH=jasmine.json istanbul cover --include-all-sources  node_modules/.bin/jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbellagamba/mockingbird.git"
+  },
+  "author": {
+    "name": "Mirco Bellagamba",
+    "email": "mirco.bellag@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "istanbul": "0.3.20",
+    "jshint": "2.8.0",
+    "jshint-stylish": "2.0.1",
+    "jasmine": "2.3.2"
+  }
+}
